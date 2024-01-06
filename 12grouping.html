@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div p{
+            color: blue;
+            font-style:bold;
+        }
+        input[type="text"]
+        {
+            border: 2px solid red;
+        }
+        table,th,td{
+            border: 2px solid lime;
+        }
+        #nav{
+            background-color:blueviolet;
+        }
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        li{
+            margin: 0;
+            padding: 5px;
+            border: 2px solid yellow;
+            background-color: aquamarine;
+           }
+        a{
+            text-decoration: none;
+            color:darkred;
+            padding: 10px;
+        }   
+        a:hover{
+            background-color: chartreuse;
+            color:white;
+            font-style: bold;
+        }
+        a:visited{
+            color:blue;
+
+        }
+        #para::before{
+        content: ">>";
+        color:darkred;
+        }
+        #para::after{
+            content: ">>";
+            color:brown ;
+        }
+        #para ::first-line{
+            color:lime;
+        }
+        #para::first-letter{
+            color:blueviolet
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Global English</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, molestias repellat. Quia ullam voluptate molestiae!</p>
+    </div>
+    <div>
+        <h1>Welcome to new page</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero rerum in asperiores reprehenderit provident, quaerat enim magnam quasi. Suscipit, possimus? Quas accusantium sunt dolorum error.</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio sed error in corporis!</p>
+    <input type="text">
+    <input type="password">
+    <input type="text">
+    <table>
+        <tr>
+            <th>Serial no.</th>
+            <th>Nme</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Sana</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Asma</td>
+            <td>23</td>
+        </tr>
+    </table>
+    <div id="nav">
+    <ul>
+        <li><a href="CSS.html">Home</a></li>
+        <li><a href="about">About</a></li>
+        <li><a href="services">Services</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    </div>
+    <div>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex vel nam possimus asperiores veritatis vero voluptatibus corrupti necessitatibus molestiae! Culpa nam earum quidem amet odio.</p>
+    </div>
+
+</body>
+</html>

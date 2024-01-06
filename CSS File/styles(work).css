@@ -1,0 +1,27 @@
+#rida{
+    color: blue;
+  }
+  .container{
+      background-color:rgb(247, 222, 222);
+      border-radius:30px;
+      height: 400px;
+      width: 200px ;
+      margin:auto;
+      padding:60px;
+      text-align: center;
+  }
+  #new:hover{
+      background-color:purple;
+      color: white;
+  }
+  #main:hover{
+      background-color: purple;
+      color: white;
+      width:300px;
+  }
+  #main1:hover{
+      background-color: lightpink;
+      color:white;
+      width:300px;
+  }
+  

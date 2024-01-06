@@ -1,0 +1,23 @@
+p{
+    font-style:italic;
+    color:red;
+}
+.important{
+    font-style:italic;
+    font-weight: bold;
+    background-color:blueviolet;
+}
+/* .box-text{
+    font-style: oblique;
+    color: blue;
+} */
+#container{
+    background-color:pink;
+}
+.list-item{
+    border:2px double white;
+}
+.box{
+    color:red;
+    background-color: rgb(243, 100, 243);
+}

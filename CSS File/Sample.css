@@ -1,0 +1,18 @@
+div{
+    color:blue;
+    background-color:aquamarine;
+    border:5px double orangered;
+    height: 200px;
+    width:500px;
+} 
+#heading{
+    background-color:crimson;
+    text-align:center;
+    font-style:italic;
+}
+.para{
+    color:brown;
+    font-weight: bold;
+    font-style:italic;
+    background-color: aquamarine;
+}

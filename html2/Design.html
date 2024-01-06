@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boxes</title>
+    <link rel="stylesheet" href="/html/html2/work.html">
+    <style>
+        #n1{
+            background-color:plum;
+            height:400px ;
+            width:400px;
+            margin:300px auto;
+            z-index: -0;
+            box-shadow: 10px 10px 10px 10px ;
+            border-radius:30px;
+          }
+        #n2{
+            background-color: lightgrey;
+            height:300px ;
+            width:300px;
+            position: absolute;
+            margin-left: -30px;
+            z-index: -1;
+            margin-top: -50px;
+            box-shadow: 10px 10px 10px 10px ;
+            /*box-shadow:h-offset v-offset blur spread color | inset*/
+            border-radius: 30px;
+            }
+        #n3{
+            background-color:purple;
+            height: 300px; 
+            width:300px ;
+            position: absolute;
+            margin-left: -100px;
+            z-index: -2;
+            margin-top: -100px;
+            box-shadow:10px 10px 10px 10px;
+            border-radius: 30px;
+           }
+    </style>
+</head>
+<body>
+<div id="n1">
+    <div id="n2"></div>
+    <div id="n3"></div>
+    <div class="container">
+        <h1 id="rida" style="color:red;"> LOGIN</h1>
+    <form>
+        <input id="new" type="text" placeholder="username"><br><br>
+        <input id="main" type="password" placeholder="password"><br><br>
+        <button id="main1">Login Button</button>
+    </form>
+    </div>
+</div><br>
+</body>
+</html>
