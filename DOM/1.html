@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div id="hello" class="para">
+        <h1>Welcome</h1>
+    </div>
+    <button onclick="change()">
+        Click
+    </button>
+    <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio debitis laudantium veritatis minus
+        laboriosam eos quis impedit fugit tenetur dicta delectus, eaque, cum odit esse assumenda in tempora consequatur
+        dolores, quo error sit nulla qui.
+    </p>
+    <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem veniam numquam eum obcaecati fuga voluptatibus
+        modi, dolor eos consectetur cupiditate iure, laboriosam eaque laudantium reprehenderit!
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione quis odit rem. Enim iure laboriosam impedit
+        quaerat nemo obcaecati cupiditate? Voluptates iure est vel tempore architecto harum modi veniam ut.
+    </p>
+    <script>
+        const divelement = document.getElementById("hello")
+        console.log(divelement)
+        console.log(divelement.textContent)
+        console.log(divelement.innerHTML)
+        divelement.textContent = "Hello World"
+        // divelement.innerHTML="<h1>Hai</h1>"
+        // divelement.style.color="Green"
+        // divelement.style.backgroundColor="yellow"
+        function change() {
+            divelement.innerHTML = "<h1>Hai</h1>"
+            divelement.style.color = "Green"
+            divelement.style.backgroundColor = "yellow"
+        }
+        const paragraph=document.getElementsByTagName("p")
+        console.log(paragraph)
+        console.log(paragraph[0])
+        const classelements=document.getElementsByClassName("para")
+        console.log(classelements)
+        // const ptag=document.querySelector("p")
+        // console.log(ptag)
+        const ptag=document.querySelectorAll("p")
+        console.log(ptag)
+        const divtag=document.querySelector("#hello")
+        console.log(divtag)
+    </script>
+</body>
+
+</html>

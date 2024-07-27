@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 1 -->
+<div id="myDiv">Welcome</div>
+<button onclick="change()">Click</button>
+
+   <!-- 2 -->
+<div class="myClass">Hello</div>
+<p class="myClass">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, totam.</p>
+<button onclick="change1()">Change</button>
+    <script>
+    // 1 
+       const divelement=document.getElementById("myDiv")
+       function change()
+       {
+        divelement.innerHTML="Content Changed"
+       }
+
+    //2
+         const classelements=document.getElementsByClassName("myClass")
+         function change1()
+         {
+           classelements[0].innerHTML="Class content changed!"
+           classelements[1].innerHTML="Class content changed!"
+         }
+        
+       
+    </script>
+</body>
+</html>

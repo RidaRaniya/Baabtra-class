@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1 align="center">STUDENT REGISTRATION FORM</h1>
+Name:&nbsp &nbsp &nbsp<input type="text" id="name"><br><br>
+Age:&nbsp &nbsp &nbsp<input type="text" id="age"><br><br>
+Address:&nbsp &nbsp<textarea rows="5" cols="10" id="address"></textarea><br><br>
+Email:&nbsp &nbsp<input type="text" id="email"><br><br>
+Phone Number:&nbsp &nbsp<input type="text" id="phonenumber"> <br><br>
+<input type="button" value="REGISTER" id="register" onclick="addtable()">
+<h2>User Details</h2>
+    <table id="userTable" border="1">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Address</th>
+            <th>Email</th>
+            <th>Phone Number</th>
+        </tr>
+</table>
+
+
+<script>
+    function addtable(){
+        var name=document.getElementById("name").value
+        var age=document.getElementById("age").value
+        var address=document.getElementById("address").value
+        var email=document.getElementById("email").value
+        var phonenumber=document.getElementById("phonenumber").value
+        if(name=="" || age=="" || address=="" || email=="" || phonenumber=="")
+    {
+        alert("All fields are required")
+        return
+    }
+       var table=document.getElementById("userTable")
+       var row=table.insertRow()
+       var cell1=row.insertCell(0)
+       var cell2=row.insertCell(1)
+       var cell3=row.insertCell(2)
+       var cell4=row.insertCell(3)
+       var cell5=row.insertCell(4)
+       var cell6=row.insertCell(5)
+       cell1.innerHTML=name
+       cell2.innerHTML=age
+       cell3.innerHTML=address
+       cell4.innerHTML=email
+       cell5.innerHTML=phonenumber
+       cell6.innerHTML=`<button onclick="deleterow(this)">Delete</button>`
+      }
+      function deleterow(button){
+        var row=button.parentNode.parentNode.remove()
+      }
+      
+</script>
+
+</body>
+</html>
